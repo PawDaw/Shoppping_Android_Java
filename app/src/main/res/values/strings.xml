@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShopppingProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="remove" />
+    <string name="add" />
+    <string name="Number" />
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="10dp"
+        android:textColor="#CC0033"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/list_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/shopPrice"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unit"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/shopPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14sp" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Remove"
+        android:id="@+id/removeButton"
+        android:layout_alignTop="@+id/shopPrice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/color_button"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:background="@drawable/color_button"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignLeft="@+id/removeButton"
+        android:layout_alignStart="@+id/removeButton" />
+
+</RelativeLayout>
+
